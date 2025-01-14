@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    <h2 style="text-align: center; color: #ff0000">
+        Task no. 2 - Differernce between Absolute and Relative Positioning.
+      </h2>
+    <h3>Relative Positioning:</h3>
+    <ul>
+      <li>
+        When an element is set to position: relative;, it is positioned relative
+        to its normal position in the document flow.
+      </li>
+      <li>
+        If you move a relatively positioned element, it will be offset from its
+        normal position, but the space it originally occupied will still be
+        reserved. Other elements on the page will not be affected by its
+        movement.
+      </li>
+      <li>
+        Child elements with position: absolute; inside a relatively positioned
+        container are positioned relative to that container.
+      </li>
+    </ul>
+    <h3>Absolute Positioning:</h3>
+    <ul>
+        <li>When an element is set to position: absolute;, it is positioned relative to its nearest positioned ancestor (an ancestor with any position value other than static) or, if none exists, relative to the initial containing block (usually the viewport).</li>
+        <li>Absolute positioning removes the element from the normal document flow. It won't reserve space for the element in the layout, and other elements will ignore it when positioning themselves.</li>
+        <li>If no positioned ancestor is found, the element will be positioned relative to the initial containing block, which is the viewport.</li>
+
+    </ul>
+    <br>
+    <p>In summary, <em>position: relative;</em> positions an element relative to its normal position, and its movement can affect the layout of other elements. On the other hand, <em>position: absolute;</em> positions an element relative to its nearest positioned ancestor or the viewport and takes it out of the normal document flow, affecting the layout less predictably.</p>
+</body>
+</html>
